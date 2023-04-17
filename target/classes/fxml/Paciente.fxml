@@ -37,7 +37,7 @@
                   <Label fx:id="Txtid" text="ID" />
                   <Label text="Nome" GridPane.rowIndex="1" />
                   <Label text="Plano de Saúde" GridPane.rowIndex="5" />
-                  <TextField fx:id="txtid" GridPane.columnIndex="1" GridPane.columnSpan="2" />
+                  <TextField fx:id="txtid" editable="false" mouseTransparent="true" GridPane.columnIndex="1" />
                   <TextField fx:id="TxtNome" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="1" />
                   <TextField fx:id="Txtcpf" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="2" />
                   <TextField fx:id="TxtEndereco" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="3" />

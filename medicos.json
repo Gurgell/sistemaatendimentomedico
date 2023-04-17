@@ -15,4 +15,25 @@
     "ativo" : true
   } ],
   "ativo" : true
+}, {
+  "id" : 2,
+  "crm" : "123456",
+  "cpf" : "19149480766",
+  "nome" : "Gabriela Gurgel",
+  "endereco" : "rua dos veveco",
+  "email" : "gabrielagurgel@gmail.com",
+  "especialidades" : [ {
+    "nome" : "Ortopedista",
+    "id" : 2,
+    "ativo" : true
+  }, {
+    "nome" : "Pediatra",
+    "id" : 1,
+    "ativo" : true
+  }, {
+    "nome" : "Psiquiatra",
+    "id" : 3,
+    "ativo" : true
+  } ],
+  "ativo" : true
 } ]

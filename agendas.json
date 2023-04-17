@@ -45,4 +45,51 @@
     "id" : 2,
     "ativo" : true
   }
+}, {
+  "id" : 1,
+  "data" : "17/04/2023",
+  "hora" : "17:00",
+  "medico" : {
+    "id" : 1,
+    "crm" : "1234",
+    "cpf" : "18790797710",
+    "nome" : "Vinicius",
+    "endereco" : "Operário",
+    "email" : "vinicius@gmail.com",
+    "especialidades" : [ {
+      "nome" : "Ortopedista",
+      "id" : 2,
+      "ativo" : true
+    }, {
+      "nome" : "Psiquiatra",
+      "id" : 3,
+      "ativo" : true
+    } ],
+    "ativo" : true
+  },
+  "paciente" : {
+    "id" : 3,
+    "cpf" : "18003612705",
+    "nome" : "Hugo",
+    "endereco" : "nao interessa",
+    "email" : "hugo@gmail.com",
+    "plano" : {
+      "nome" : "Bradesco",
+      "id" : 2,
+      "ativo" : true
+    },
+    "ativo" : true
+  },
+  "especialidade" : {
+    "nome" : "Psiquiatra",
+    "id" : 3,
+    "ativo" : true
+  },
+  "ativo" : true,
+  "particular" : false,
+  "plano" : {
+    "nome" : "Bradesco",
+    "id" : 2,
+    "ativo" : true
+  }
 } ]

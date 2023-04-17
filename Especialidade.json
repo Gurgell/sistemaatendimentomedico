@@ -10,4 +10,16 @@
   "nome" : "Psiquiatra",
   "id" : 3,
   "ativo" : true
+}, {
+  "nome" : "Dermatologista",
+  "id" : 6,
+  "ativo" : true
+}, {
+  "nome" : "Obstetra",
+  "id" : 4,
+  "ativo" : true
+}, {
+  "nome" : "",
+  "id" : 5,
+  "ativo" : true
 } ]

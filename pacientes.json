@@ -1,4 +1,16 @@
 [ {
+  "id" : 3,
+  "cpf" : "18003612705",
+  "nome" : "Hugo",
+  "endereco" : "nao interessa",
+  "email" : "hugo@gmail.com",
+  "plano" : {
+    "nome" : "Bradesco",
+    "id" : 2,
+    "ativo" : true
+  },
+  "ativo" : true
+}, {
   "id" : 1,
   "cpf" : "09136117781",
   "nome" : "Luciana",
@@ -9,7 +21,7 @@
     "id" : 2,
     "ativo" : true
   },
-  "ativo" : true
+  "ativo" : false
 }, {
   "id" : 2,
   "cpf" : "19149480766",
