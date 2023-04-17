@@ -1,0 +1,25 @@
+[ {
+  "id" : 1,
+  "cpf" : "09136117781",
+  "nome" : "Luciana",
+  "endereco" : "Visconde de Araujo",
+  "email" : "luciana@gmail",
+  "plano" : {
+    "nome" : "Bradesco",
+    "id" : 2,
+    "ativo" : true
+  },
+  "ativo" : true
+}, {
+  "id" : 2,
+  "cpf" : "19149480766",
+  "nome" : "Gabriel",
+  "endereco" : "rua barra mansa",
+  "email" : "grugel.gabriel@",
+  "plano" : {
+    "nome" : "Bradesco",
+    "id" : 2,
+    "ativo" : true
+  },
+  "ativo" : false
+} ]

@@ -15,7 +15,7 @@
    <bottom>
       <Pane fx:id="pane" prefHeight="437.0" prefWidth="587.0" BorderPane.alignment="CENTER">
          <children>
-            <GridPane layoutX="261.0" layoutY="116.0" prefHeight="258.0" prefWidth="296.0">
+            <GridPane layoutX="261.0" layoutY="97.0" prefHeight="313.0" prefWidth="296.0">
                <columnConstraints>
                <ColumnConstraints hgrow="SOMETIMES" maxWidth="135.0" minWidth="10.0" prefWidth="131.0" />
                <ColumnConstraints hgrow="SOMETIMES" maxWidth="208.0" minWidth="10.0" prefWidth="133.0" />
@@ -28,6 +28,7 @@
                   <RowConstraints maxHeight="77.0" minHeight="10.0" prefHeight="31.0" vgrow="SOMETIMES" />
                   <RowConstraints maxHeight="83.0" minHeight="0.0" prefHeight="38.0" vgrow="SOMETIMES" />
                   <RowConstraints maxHeight="107.0" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="88.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
                   <RowConstraints maxHeight="88.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
                </rowConstraints>
                <children>
@@ -45,10 +46,10 @@
                   <TextField fx:id="txtEndereco" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="4" />
                   <TextField fx:id="txtEmail" prefHeight="23.0" prefWidth="199.0" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="5" />
                   <ListView fx:id="listaEspecialidade" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="6" />
+                  <Button mnemonicParsing="false" onAction="#gravar_btn" prefHeight="25.0" prefWidth="97.0" text="Gravar" GridPane.columnIndex="2" GridPane.rowIndex="7" />
                </children>
             </GridPane>
-            <Button layoutX="460.0" layoutY="394.0" mnemonicParsing="false" onAction="#gravar_btn" prefHeight="25.0" prefWidth="97.0" text="Gravar" />
-            <Button layoutX="13.0" layoutY="398.0" mnemonicParsing="false" onAction="#excluir_btn" prefHeight="25.0" prefWidth="201.0" text="Excluir" />
+            <Button layoutX="13.0" layoutY="398.0" mnemonicParsing="false" onAction="#excluir_btn" prefHeight="25.0" prefWidth="87.0" text="Excluir" />
             <ListView fx:id="listaMedico" layoutX="14.0" layoutY="96.0" onKeyPressed="#listaMedico_keyPressed" onMouseClicked="#listaMedico_mouseClicked" prefHeight="298.0" prefWidth="200.0" />
             <Text layoutX="161.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CADASTRO DE MÉDICOS">
                <font>

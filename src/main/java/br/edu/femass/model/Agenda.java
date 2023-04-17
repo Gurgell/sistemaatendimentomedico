@@ -81,7 +81,9 @@ public class Agenda {
     
     @Override
     public String toString() {
-        return  data + " - " +  hora  +", Medico = " + medico.getNome() + ", Paciente = " + paciente.getNome();
+        return  "Data e hora: " + data + " - " +  hora  +
+        "\nMedico = " + medico.getNome() + 
+        "\nPaciente = " + paciente.getNome();
     }
 
     public int compareTo(Object obj){

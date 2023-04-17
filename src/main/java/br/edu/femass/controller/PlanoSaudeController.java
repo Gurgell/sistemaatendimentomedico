@@ -106,6 +106,7 @@ public class PlanoSaudeController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         exibirPlanos();
 
+        
         pane.setOnMouseClicked(event -> {
             txtid.setText("");
             TxtNomePlano.setText("");

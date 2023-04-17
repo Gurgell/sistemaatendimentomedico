@@ -1,0 +1,9 @@
+[ {
+  "nome" : "Unimed",
+  "id" : 1,
+  "ativo" : true
+}, {
+  "nome" : "Bradesco",
+  "id" : 2,
+  "ativo" : true
+} ]

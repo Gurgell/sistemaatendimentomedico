@@ -1,0 +1,13 @@
+[ {
+  "nome" : "Ortopedista",
+  "id" : 2,
+  "ativo" : true
+}, {
+  "nome" : "Pediatra",
+  "id" : 1,
+  "ativo" : true
+}, {
+  "nome" : "Psiquiatra",
+  "id" : 3,
+  "ativo" : true
+} ]
