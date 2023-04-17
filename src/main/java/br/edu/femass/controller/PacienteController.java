@@ -4,18 +4,23 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+import br.edu.femass.dao.Dao;
 import br.edu.femass.dao.PacienteDao;
+import br.edu.femass.dao.PlanoSaudeDao;
 import br.edu.femass.diversos.MensagensJavaFx;
 import br.edu.femass.model.Paciente;
+import br.edu.femass.model.PlanoSaude;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.ComboBox;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.Pane;
 
 
 public class PacienteController implements Initializable {
@@ -36,10 +41,17 @@ public class PacienteController implements Initializable {
     private TextField txtid;
 
     @FXML
+    private ComboBox<PlanoSaude> cboPlano;
+
+    @FXML
     private ListView<Paciente> listaPaciente;
 
+    @FXML
+    private Pane pane;
+
     private PacienteDao pacienteDao = new PacienteDao();
-    
+    private Dao<PlanoSaude> planoSaudeDao= new PlanoSaudeDao();
+
     @FXML
     private void gravar_btn(ActionEvent event) throws IOException {
         try {
@@ -47,6 +59,8 @@ public class PacienteController implements Initializable {
 
             paciente.setEndereco(TxtEndereco.getText());
             txtid.setText(paciente.getId().toString());
+
+            paciente.setPlano((PlanoSaude) cboPlano.getSelectionModel().getSelectedItem());
 
             if(!(pacienteDao.gravar(paciente))){
                 MensagensJavaFx.exibirMensagem("Não foi possível gravar o paciente!");
@@ -58,6 +72,7 @@ public class PacienteController implements Initializable {
             TxtEndereco.setText("");
             TxtNome.setText("");
             txtid.setText("");
+            cboPlano.getSelectionModel().select(null);
 
             exibirPacientes();
             
@@ -86,6 +101,18 @@ public class PacienteController implements Initializable {
         TxtEmail.setText(paciente.getEmail());
         TxtEndereco.setText(paciente.getEndereco());
         TxtNome.setText(paciente.getNome());
+        cboPlano.getSelectionModel().select(paciente.getPlano());
+
+    }
+
+    public void exibirPlanos(){
+        try {
+            ObservableList<PlanoSaude> data = FXCollections.observableArrayList(planoSaudeDao.buscarAtivos());
+            
+            cboPlano.setItems(data);
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
     }
 
     public void exibirPacientes(){
@@ -101,12 +128,38 @@ public class PacienteController implements Initializable {
 
     @FXML
     private void excluir_btn(ActionEvent event) throws IOException {
-        
+        Paciente paciente = listaPaciente.getSelectionModel().getSelectedItem();
+            if(paciente == null) return;
+            try{
+                if(!(pacienteDao.excluir(paciente))){
+                    MensagensJavaFx.exibirMensagem("Não foi possível excluir o paciente selecionado!");
+                }
+                Txtcpf.setText("");
+                TxtEmail.setText("");
+                TxtEndereco.setText("");
+                TxtNome.setText("");
+                txtid.setText("");
+                cboPlano.getSelectionModel().select(null);
+
+                exibirPacientes();
+            }catch(Exception e){
+                e.printStackTrace();
+            }
     }
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         exibirPacientes();
+        exibirPlanos();
+        pane.setOnMouseClicked(event -> {
+            Txtcpf.setText("");
+            TxtEmail.setText("");
+            TxtEndereco.setText("");
+            TxtNome.setText("");
+            txtid.setText("");
+            cboPlano.getSelectionModel().select(null);
+            listaPaciente.getSelectionModel().clearSelection(); 
+        });
     }
 
 }

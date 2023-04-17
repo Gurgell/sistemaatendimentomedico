@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.femass.controller.MedicoController">
+   <bottom>
+      <Pane fx:id="pane" prefHeight="437.0" prefWidth="587.0" BorderPane.alignment="CENTER">
+         <children>
+            <GridPane layoutX="261.0" layoutY="116.0" prefHeight="258.0" prefWidth="296.0">
+               <columnConstraints>
+               <ColumnConstraints hgrow="SOMETIMES" maxWidth="135.0" minWidth="10.0" prefWidth="131.0" />
+               <ColumnConstraints hgrow="SOMETIMES" maxWidth="208.0" minWidth="10.0" prefWidth="133.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="208.0" minWidth="10.0" prefWidth="133.0" />
+               </columnConstraints>
+               <rowConstraints>
+               <RowConstraints maxHeight="76.0" minHeight="10.0" prefHeight="33.0" vgrow="SOMETIMES" />
+               <RowConstraints maxHeight="92.0" minHeight="10.0" prefHeight="26.0" vgrow="SOMETIMES" />
+               <RowConstraints maxHeight="73.0" minHeight="10.0" prefHeight="36.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="77.0" minHeight="10.0" prefHeight="31.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="83.0" minHeight="0.0" prefHeight="38.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="107.0" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="88.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label text="CRM" GridPane.rowIndex="3" />
+                  <Label text="Endereço" GridPane.rowIndex="4" />
+                  <Label fx:id="Txtid" text="ID" />
+                  <Label text="Nome" GridPane.rowIndex="1" />
+                  <Label text="Especialidade" GridPane.rowIndex="6" />
+                  <Label text="E-mail" GridPane.rowIndex="5" />
+                  <Label text="CPF" GridPane.rowIndex="2" />
+                  <TextField fx:id="txtid" editable="false" mouseTransparent="true" GridPane.columnIndex="1" GridPane.columnSpan="2" />
+                  <TextField fx:id="txtNome" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="1" />
+                  <TextField fx:id="txtCpf" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="2" />
+                  <TextField fx:id="txtCrm" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="3" />
+                  <TextField fx:id="txtEndereco" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="4" />
+                  <TextField fx:id="txtEmail" prefHeight="23.0" prefWidth="199.0" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="5" />
+                  <ListView fx:id="listaEspecialidade" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="6" />
+               </children>
+            </GridPane>
+            <Button layoutX="460.0" layoutY="394.0" mnemonicParsing="false" onAction="#gravar_btn" prefHeight="25.0" prefWidth="97.0" text="Gravar" />
+            <Button layoutX="13.0" layoutY="398.0" mnemonicParsing="false" onAction="#excluir_btn" prefHeight="25.0" prefWidth="201.0" text="Excluir" />
+            <ListView fx:id="listaMedico" layoutX="14.0" layoutY="96.0" onKeyPressed="#listaMedico_keyPressed" onMouseClicked="#listaMedico_mouseClicked" prefHeight="298.0" prefWidth="200.0" />
+            <Text layoutX="161.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CADASTRO DE MÉDICOS">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Separator layoutY="72.0" prefHeight="2.0" prefWidth="587.0" />
+         </children>
+      </Pane>
+   </bottom>
+</BorderPane>

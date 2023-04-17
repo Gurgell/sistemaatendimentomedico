@@ -10,12 +10,12 @@ public class Paciente {
     private String nome;
     private String endereco;
     private String email;
-    private String plano;    
+    private PlanoSaude plano;
     private boolean ativo;
 
     private static Long ultimoCodigo = 0L;
 
-    public Paciente(){   //Construtor vazio para utilização do json
+    public Paciente(){ 
     }
 
     public Paciente(String cpf, String nome, String email){
@@ -29,10 +29,17 @@ public class Paciente {
         ultimoCodigo++;   
     }
 
+    public PlanoSaude getPlano() {
+        return plano;
+    }
+
+    public void setPlano(PlanoSaude plano) {
+        this.plano = plano;
+    }
+
     public Long getId() {
         return id;
     }
-
 
     public String getCpf() {
         return cpf;

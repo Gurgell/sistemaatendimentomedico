@@ -17,19 +17,13 @@ public class EntryPoint extends Application {
         scene.getStylesheets().add("/styles/Styles.css");
         scene.getRoot().setStyle("-fx-font-family: 'serif'");
 
-        stage.setTitle("MENU PRINCIPAL");
+        stage.setTitle("Menu Principal");
         stage.setScene(scene);
         stage.show();
+
+        stage.setResizable(false); //Não permitindo aumentar a tela
     }
 
-    /**
-     * The main() method is ignored in correctly deployed JavaFX application.
-     * main() serves only as fallback in case the application can not be
-     * launched through deployment artifacts, e.g., in IDEs with limited FX
-     * support. NetBeans ignores main().
-     *
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
         launch(args);
     }

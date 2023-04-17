@@ -31,10 +31,9 @@ public class PacienteDao extends Persist implements Dao<Paciente>{
     @Override
     public boolean excluir(Paciente objeto) throws StreamWriteException, DatabindException, IOException {
         Set<Paciente> pacientes = buscar();
-        //boolean gravou = Pacientes.remove(Paciente);
-        for (Paciente PacienteSelecionado: pacientes){
-            if (PacienteSelecionado.equals(objeto)){
-                PacienteSelecionado.setAtivo(false);
+        for (Paciente pacienteSelecionado: pacientes){
+            if (pacienteSelecionado.equals(objeto)){
+                pacienteSelecionado.setAtivo(false);
             }
         }
         objectMapper.writerWithDefaultPrettyPrinter().writeValue(arquivo, pacientes);   
