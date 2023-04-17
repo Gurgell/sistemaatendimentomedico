@@ -1,38 +1,17 @@
 [ {
   "id" : 1,
-  "crm" : "1234",
-  "cpf" : "18790797710",
-  "nome" : "Vinicius",
-  "endereco" : "Operário",
-  "email" : "vinicius@gmail.com",
-  "especialidades" : [ {
-    "nome" : "Ortopedista",
-    "id" : 2,
-    "ativo" : true
-  }, {
-    "nome" : "Psiquiatra",
-    "id" : 3,
-    "ativo" : true
-  } ],
-  "ativo" : true
-}, {
-  "id" : 2,
-  "crm" : "123456",
+  "crm" : "12345",
   "cpf" : "19149480766",
-  "nome" : "Gabriela Gurgel",
-  "endereco" : "rua dos veveco",
-  "email" : "gabrielagurgel@gmail.com",
+  "nome" : "Gabriel Gurgel",
+  "endereco" : "Rua barra mansa",
+  "email" : "Gurgel@gurgel",
   "especialidades" : [ {
-    "nome" : "Ortopedista",
+    "nome" : "Oftalmologista",
     "id" : 2,
     "ativo" : true
   }, {
     "nome" : "Pediatra",
     "id" : 1,
-    "ativo" : true
-  }, {
-    "nome" : "Psiquiatra",
-    "id" : 3,
     "ativo" : true
   } ],
   "ativo" : true

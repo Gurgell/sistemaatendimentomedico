@@ -1,6 +1,7 @@
 package br.edu.femass.model;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -11,6 +12,14 @@ public class PacienteTest {
     @BeforeEach
     public void beforeEach() {
         paciente = new Paciente("19149480766", "Gabriel", "Gurgel@Gurgel");
+    }
+
+    @Test
+    void construtorIncorreto(){
+        assertThrows(
+            IllegalArgumentException.class,
+            () -> new Paciente("8232323", "Gabriel", "gurgel@gurgel")
+        );
     }
 
     @Test

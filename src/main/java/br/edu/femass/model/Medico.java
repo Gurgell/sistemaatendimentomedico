@@ -63,6 +63,10 @@ public class Medico {
         return endereco;
     }
 
+    public void setEspecialidades(List<Especialidade> especialidades) {
+        this.especialidades = especialidades;
+    }
+
     public void setEndereco(String endereco) {
         this.endereco = endereco;
     }

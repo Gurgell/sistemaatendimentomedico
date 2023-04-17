@@ -31,7 +31,6 @@ public class AgendaTest {
         agenda.setParticular(false);
     }
 
-
     @Test
     public void testGetters() {
         assertEquals("22/08/2023", agenda.getData());

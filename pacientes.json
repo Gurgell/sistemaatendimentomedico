@@ -1,37 +1,13 @@
 [ {
-  "id" : 3,
-  "cpf" : "18003612705",
-  "nome" : "Hugo",
-  "endereco" : "nao interessa",
-  "email" : "hugo@gmail.com",
+  "id" : 1,
+  "cpf" : "19149480766",
+  "nome" : "Daniel",
+  "endereco" : "Rua treze",
+  "email" : "Daniel@daniel",
   "plano" : {
-    "nome" : "Bradesco",
-    "id" : 2,
+    "nome" : "Unimed",
+    "id" : 1,
     "ativo" : true
   },
   "ativo" : true
-}, {
-  "id" : 1,
-  "cpf" : "09136117781",
-  "nome" : "Luciana",
-  "endereco" : "Visconde de Araujo",
-  "email" : "luciana@gmail",
-  "plano" : {
-    "nome" : "Bradesco",
-    "id" : 2,
-    "ativo" : true
-  },
-  "ativo" : false
-}, {
-  "id" : 2,
-  "cpf" : "19149480766",
-  "nome" : "Gabriel",
-  "endereco" : "rua barra mansa",
-  "email" : "grugel.gabriel@",
-  "plano" : {
-    "nome" : "Bradesco",
-    "id" : 2,
-    "ativo" : true
-  },
-  "ativo" : false
 } ]

@@ -1,25 +1,13 @@
 [ {
-  "nome" : "Ortopedista",
+  "nome" : "abc",
+  "id" : 3,
+  "ativo" : true
+}, {
+  "nome" : "Oftalmologista",
   "id" : 2,
   "ativo" : true
 }, {
   "nome" : "Pediatra",
   "id" : 1,
-  "ativo" : true
-}, {
-  "nome" : "Psiquiatra",
-  "id" : 3,
-  "ativo" : true
-}, {
-  "nome" : "Dermatologista",
-  "id" : 6,
-  "ativo" : true
-}, {
-  "nome" : "Obstetra",
-  "id" : 4,
-  "ativo" : true
-}, {
-  "nome" : "",
-  "id" : 5,
   "ativo" : true
 } ]

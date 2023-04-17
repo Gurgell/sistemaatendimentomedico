@@ -13,7 +13,6 @@ public class PlanoSaudeTest {
     @BeforeEach
     public void beforeEach() {
         planoSaude = new PlanoSaude("Bradesco");
-
     }
     
     @Test

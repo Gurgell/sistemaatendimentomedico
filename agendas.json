@@ -1,95 +1,91 @@
 [ {
-  "id" : 1,
-  "data" : "18/04/2023",
-  "hora" : "08:00",
+  "id" : 2,
+  "data" : "28/06/2023",
+  "hora" : "15:00",
   "medico" : {
     "id" : 1,
-    "crm" : "1234",
-    "cpf" : "18790797710",
-    "nome" : "Vinicius",
-    "endereco" : "Operário",
-    "email" : "vinicius@gmail.com",
+    "crm" : "12345",
+    "cpf" : "19149480766",
+    "nome" : "Gabriel Gurgel",
+    "endereco" : "Rua barra mansa",
+    "email" : "Gurgel@gurgel",
     "especialidades" : [ {
-      "nome" : "Ortopedista",
+      "nome" : "Oftalmologista",
       "id" : 2,
       "ativo" : true
     }, {
-      "nome" : "Psiquiatra",
-      "id" : 3,
+      "nome" : "Pediatra",
+      "id" : 1,
       "ativo" : true
     } ],
     "ativo" : true
   },
   "paciente" : {
     "id" : 1,
-    "cpf" : "09136117781",
-    "nome" : "Luciana",
-    "endereco" : "Visconde de Araujo",
-    "email" : "luciana@gmail",
+    "cpf" : "19149480766",
+    "nome" : "Daniel",
+    "endereco" : "Rua treze",
+    "email" : "Daniel@daniel",
     "plano" : {
-      "nome" : "Bradesco",
-      "id" : 2,
+      "nome" : "Unimed",
+      "id" : 1,
       "ativo" : true
     },
     "ativo" : true
   },
   "especialidade" : {
-    "nome" : "Psiquiatra",
-    "id" : 3,
+    "nome" : "Pediatra",
+    "id" : 1,
     "ativo" : true
   },
   "ativo" : true,
   "particular" : false,
   "plano" : {
-    "nome" : "Bradesco",
-    "id" : 2,
+    "nome" : "Unimed",
+    "id" : 1,
     "ativo" : true
   }
 }, {
   "id" : 1,
-  "data" : "17/04/2023",
-  "hora" : "17:00",
+  "data" : "27/08/2023",
+  "hora" : "13:00",
   "medico" : {
     "id" : 1,
-    "crm" : "1234",
-    "cpf" : "18790797710",
-    "nome" : "Vinicius",
-    "endereco" : "Operário",
-    "email" : "vinicius@gmail.com",
+    "crm" : "12345",
+    "cpf" : "19149480766",
+    "nome" : "Gabriel Gurgel",
+    "endereco" : "Rua barra mansa",
+    "email" : "Gurgel@gurgel",
     "especialidades" : [ {
-      "nome" : "Ortopedista",
+      "nome" : "Oftalmologista",
       "id" : 2,
       "ativo" : true
     }, {
-      "nome" : "Psiquiatra",
-      "id" : 3,
+      "nome" : "Pediatra",
+      "id" : 1,
       "ativo" : true
     } ],
     "ativo" : true
   },
   "paciente" : {
-    "id" : 3,
-    "cpf" : "18003612705",
-    "nome" : "Hugo",
-    "endereco" : "nao interessa",
-    "email" : "hugo@gmail.com",
+    "id" : 1,
+    "cpf" : "19149480766",
+    "nome" : "Daniel",
+    "endereco" : "Rua treze",
+    "email" : "Daniel@daniel",
     "plano" : {
-      "nome" : "Bradesco",
-      "id" : 2,
+      "nome" : "Unimed",
+      "id" : 1,
       "ativo" : true
     },
     "ativo" : true
   },
   "especialidade" : {
-    "nome" : "Psiquiatra",
-    "id" : 3,
+    "nome" : "Oftalmologista",
+    "id" : 2,
     "ativo" : true
   },
   "ativo" : true,
-  "particular" : false,
-  "plano" : {
-    "nome" : "Bradesco",
-    "id" : 2,
-    "ativo" : true
-  }
+  "particular" : true,
+  "plano" : null
 } ]

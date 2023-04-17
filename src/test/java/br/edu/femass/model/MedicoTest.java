@@ -2,6 +2,7 @@ package br.edu.femass.model;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,6 +20,31 @@ public class MedicoTest {
         especialidades.add(new Especialidade("Cirurgião"));
         medico = new Medico("19149480766", "1234567", "fulano", "fulano@fulano", especialidades);
         
+    }
+
+    @Test
+    void construtorIncorreto(){
+        List<Especialidade> especialidades = new ArrayList<>();
+        especialidades.add(new Especialidade("Pediatra"));
+        assertThrows(
+            IllegalArgumentException.class,
+            () -> new Medico("22443434", "12345", "Gabriel", "Gabriel@Gabriel", especialidades)
+        );
+    }
+
+    @Test
+    void medicoComUmaEspecialidade(){
+        assertEquals(1 , medico.getEspecialidades().size());
+    }
+
+    @Test
+    void medicoComDuasEspecialidades(){
+        List<Especialidade> especialidades = new ArrayList<>();
+        especialidades.add(new Especialidade("Pediatra"));
+        especialidades.add(new Especialidade("Cirurgião"));
+        medico.setEspecialidades(especialidades);
+        
+        assertEquals(2 , medico.getEspecialidades().size());
     }
     
     @Test
