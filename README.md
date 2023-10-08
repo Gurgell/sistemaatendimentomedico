@@ -1,11 +1,7 @@
 # sistema de atendimento medico
 
-Projeto desenvolvido na disciplina Programação de computadores III utilizando MAVEN, JavaFX para as telas, JSON como persistência e JUnit Jupiter para testes unitários.
-Arquitetura MVC.
+Projeto desenvolvido na disciplina de Programação de Computadores III, utilizando o Maven como gerenciador de dependências, JavaFX para a criação das interfaces gráficas, JSON como formato de persistência de dados e JUnit Jupiter para a realização de testes unitários. O projeto segue a arquitetura MVC.
 
-A idéia era criar uma solução onde fosse possível Cadastrar médicos, Especialidades, Pacientes, Planos de saúde e também uma Agenda de consultas.
-Para cadastrar um médico antes é necessário cadastrar uma especialidade. Um médico pode ter várias especialidades, e uma especialidade pode pertencer a vários médicos.
+A ideia central era criar uma solução que permitisse o cadastro de médicos, especialidades, pacientes, planos de saúde e a gestão de uma agenda de consultas. Para cadastrar um médico, é necessário primeiro registrar sua especialidade. Um médico pode possuir múltiplas especialidades, e uma especialidade pode ser compartilhada por vários médicos.
 
-Os pacientes podem ou não ter um plano de saúde. Na hora de marcar uma consulta através da agenda deve informar se a consulta é particular ou pelo plano.
-Deve ser especificado o médico a especialidade para essa consulta, informando data hora e o paciente.
-
+Os pacientes podem ou não possuir um plano de saúde. Ao marcar uma consulta na agenda, é necessário especificar se a consulta é particular ou coberta pelo plano de saúde. Além disso, é necessário indicar o médico, a especialidade, a data, a hora e o paciente envolvido na consulta.
